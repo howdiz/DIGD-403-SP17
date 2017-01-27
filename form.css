@@ -38,3 +38,11 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+input:required {
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+}
+textarea:optional {
+    background:hsl(300, 50%, 90%);
+    border:1px dotted hsl(180, 50%, 90%);
+}

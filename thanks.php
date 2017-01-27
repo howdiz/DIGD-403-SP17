@@ -15,9 +15,9 @@
         die("Connection failed: " . $conn->connect_error);
     }
     
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = $conn->real_escape_string($_POST['name']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $message = $conn->real_escape_string($_POST['message']);
 
     $sql = "INSERT INTO contacts (name, email, message)
     VALUES ('$name', '$email', '$message')";

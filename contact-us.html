@@ -15,6 +15,8 @@
         
         <link rel="stylesheet" href="form.css" type="text/css" />
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
                 
@@ -24,10 +26,10 @@
             <form action="thanks.php" method="post" class="form-signin">
 
                 <label for="name" class="sr-only">Name:</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Name" required autofocus/>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Name" required autofocus maxlength=”255”/>
        
                 <label for="mail" class="sr-only">E-mail:</label>
-                <input type="email" id="mail" name="email" class="form-control" placeholder="E-mail" required/>
+                <input type="email" id="mail" name="email" class="form-control" placeholder="E-mail" required maxlength=”255”/>
         
                 <label for="msg" class="sr-only">Message:</label>
                 <textarea class="form-control" id="msg" name="message" placeholder="Message" ></textarea>
